@@ -124,11 +124,10 @@
   }
 }
 
-/* mobile */
-@media screen and (orientation:landscape)
-/* and (min-device-width: 319px) */
-and (max-device-width: 700px) {
-   /* Your CSS Here*/
+
+/* Mobile */
+@media (min-width: 701px) and (orientation: landscape) {
+
 
   .grid {
     grid-template-columns: 1fr;
@@ -201,14 +200,12 @@ and (max-device-width: 700px) {
   }
 
   .logo {
-    max-width: 400px;
+    max-width: 800px;
   }
-
 }
 
-
 /* Tablet and Smaller Desktop */
-@media (min-width: 741px) and (max-width: 1120px) {
+@media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
