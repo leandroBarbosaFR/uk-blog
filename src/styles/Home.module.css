@@ -132,7 +132,6 @@
 /* Mobile */
 @media (min-width: 701px) and (orientation: landscape) {
 
-
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -216,8 +215,13 @@
   }
 
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25%, auto));
+    width: var(--max-width);
+    max-width: 100%;
   }
+
+
 }
 
 @media (min-width: 1121px) and (max-width: 1800px) {
@@ -225,8 +229,21 @@
   .logo {
     max-width: 1000px;
   }
+
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25%, auto));
+    width: var(--max-width);
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25%, auto));
+    width: var(--max-width);
+    max-width: 100%;
   }
 }
 
