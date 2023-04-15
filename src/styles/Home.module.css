@@ -126,12 +126,9 @@
 
 /* mobile */
 @media screen and (orientation:landscape)
-and (min-device-width: 319px)
+/* and (min-device-width: 319px) */
 and (max-device-width: 700px) {
    /* Your CSS Here*/
-   .content {
-    /* padding: 4rem; */
-  }
 
   .grid {
     grid-template-columns: 1fr;
